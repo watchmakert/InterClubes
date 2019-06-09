@@ -29,7 +29,8 @@
 </div>
 <div class="form-group">
 	{{ Form::label('idBrand', 'Id de la marca') }}
-	{{ Form::number('idBrand', null, ['class' => 'form-control']) }}
+	{{ Form::select('idBrand', $brand_array, null, ['class' => 'form-control']) }}
+		
 </div>
 
 <div class="form-group">
@@ -58,3 +59,4 @@
 		CKEDITOR.replace('description');
 	</script>
 @endsection
+
