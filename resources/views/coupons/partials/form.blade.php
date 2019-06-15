@@ -21,14 +21,14 @@
 <div class="form-group">
 	{{ Form::label('active', 'Estado del cupón') }}
 	<label>
-		{{ Form::radio('active', True) }} Activo
+		{{ Form::radio('active', 1) }} Activo
 	</label>
 	<label>
-		{{ Form::radio('active', False) }} Inactivo
+		{{ Form::radio('active', 0) }} Inactivo
 	</label>
 </div>
 <div class="form-group">
-	{{ Form::label('idBrand', 'Id de la marca') }}
+	{{ Form::label('idBrand', 'Marca a la que pertenece el cupón') }}
 	{{ Form::select('idBrand', $brand_array, null, ['class' => 'form-control']) }}
 		
 </div>

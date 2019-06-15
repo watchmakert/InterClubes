@@ -45,7 +45,6 @@ class BrandController extends Controller
             $path = Storage::disk('public')->put('image', $request->file('logoUrl'));            
             $brand->fill(['logoUrl'=> asset($path)])->save();            
         }
-        //$brand -> coupons()->sync($request->get(''))
         return redirect()->route('brands.edit', $brand->id)
         ->with('info','marca guardada con éxito');
     }

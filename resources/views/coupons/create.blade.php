@@ -8,7 +8,7 @@
                 <div class="panel-heading">Cupón</div>
 
                 <div class="panel-body">                    
-                    {{ Form::open(['route' => 'coupons.store']) }}
+                    {{ Form::open(['route' => 'coupons.store', 'files'=>true]) }}
 
                         @include('coupons.partials.form')
                         
